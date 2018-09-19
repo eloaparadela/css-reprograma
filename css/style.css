@@ -1,0 +1,98 @@
+/* GERAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/artem-sapegin-176819-unsplash.jpg');
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    overflow: hidden; /*retirar barra de rolagem*/
+    margin: 0;
+    background-size: cover; /*para o background ficar na tela toda*/
+}
+
+a {
+    text-decoration: none;
+    
+}
+a:hover{ /*mudar cor do link ao passar o mouse*/
+    filter: grayscale(100%); /*filtro para mudar a cor dos logos*/
+    transition-duration: 1s; /*delay para o efeito ir gradativamente*/
+}
+
+/* FONTS */
+h1 {
+    color: rgb(111, 6, 143);
+    font-size: 25px;
+}
+
+h2 {
+    color: #918e90;   
+    font-size: 20px;
+}
+
+/* SEÇÃO SOBRE */
+.secao-sobre {
+    background-color: white;
+    width: 780px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.sobre-conteudo__img {
+    margin-top: 40px;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}  
+    
+.sobre-conteudo {
+    /* font-family: 'Lato', sans-serif; */
+    text-align: center;
+    height: 10%;
+}
+
+.sobre-conteudo__redes-sociais {
+    text-align: center;
+    margin-top: 340px;
+    padding-bottom: 60px;
+}
+
+.sobre-conteudo__redes-sociais img {
+    width: 60px;
+    height: 59px;
+    margin-left: 40px;
+    
+}
+
+
+@media screen and (max-width: 760px) {
+    .secao-sobre {
+        background-color: rgba(228, 120, 120, 0.767);
+        width: 550px;
+        height: 500px;
+    }
+    h2 {
+        color: #131212;   
+    }
+    
+}
+
+@media screen and (max-width: 602px) {
+    .secao-sobre {
+        background-color: rgba(181, 100, 228, 0.76);
+        width: 460px;
+        height: 460px;
+    }
+
+    .sobre-conteudo__redes-sociais img {
+        width: 50px;
+        height: 49px;
+        margin-left: 40px;
+        
+    }
+    h2 {
+        color: #131212;   
+    }
+    
+}
